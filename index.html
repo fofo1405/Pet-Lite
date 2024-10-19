@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Lite - Premium Pet Food</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #A0E7E5, #B4F8C8);
+            padding: 60px 20px;
+            color: #fff;
+        }
+        header h1 {
+            font-size: 3em;
+            font-weight: 700;
+        }
+        nav {
+            background: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        nav a.nav-link {
+            color: #00796b;
+            font-weight: 500;
+        }
+        nav a.nav-link:hover {
+            color: #004d40;
+            transition: color 0.3s;
+        }
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(135deg, #FFAEBC, #FFEBB7);
+            color: #2c2c2c;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .hero h2 {
+            font-size: 2.5em;
+            font-weight: 600;
+        }
+        .about, .products, .contact {
+            padding: 80px 20px;
+            text-align: center;
+            animation: slideUp 2s ease-in-out;
+        }
+        .about h3, .products h3, .contact h3 {
+            font-size: 2em;
+            font-weight: 600;
+            color: #00796b;
+        }
+        .products img {
+            width: 220px;
+            height: auto;
+            margin: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            animation: zoomIn 1.5s ease-in-out;
+        }
+        .products img:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 40px;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        @keyframes slideUp {
+            0% { transform: translateY(50px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes zoomIn {
+            0% { transform: scale(0.8); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header class="text-center">
+        <h1>Pet Lite - Brightening Every Pet's Life</h1>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Pet Lite</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">Our Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="hero">
+        <h2>Premium Pet Food, Light and Natural</h2>
+        <p>At Pet Lite, we are committed to providing your beloved companions with nutritious, natural, and delicious pet food. Your pets deserve the best, and that's what we deliver.</p>
+    </section>
+    <section id="about" class="about">
+        <div class="container">
+            <h3>About Pet Lite</h3>
+            <p>Pet Lite is a premium pet food brand dedicated to making your pet's life healthier and happier. Our carefully crafted recipes use the finest natural ingredients to ensure quality nutrition and a delightful experience for your pets.</p>
+        </div>
+    </section>
+    <section id="products" class="products">
+        <div class="container">
+            <h3>Our Products</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="https://via.placeholder.com/200" alt="Pet Lite Dry Food" class="img-fluid">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://via.placeholder.com/200" alt="Pet Lite Wet Food" class="img-fluid">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://via.placeholder.com/200" alt="Pet Lite Treats" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="container">
+            <h3>Contact Us</h3>
+            <p>Have questions or need more information about our products? Reach out to us at:</p>
+            <p>Email: contact@petlite.com</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Pet Lite. All Rights Reserved.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #A0E7E5, #B4F8C8);
+    padding: 60px 20px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+nav {
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav a.nav-link {
+    color: #00796b;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a.nav-link:hover {
+    color: #004d40;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #FFAEBC, #FFEBB7);
+    color: #2c2c2c;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+.about, .products, .contact {
+    padding: 80px 20px;
+    text-align: center;
+    animation: slideUp 2s ease-in-out;
+}
+
+.about h3, .products h3, .contact h3 {
+    font-size: 2em;
+    font-weight: 600;
+    color: #00796b;
+}
+
+.products img {
+    width: 220px;
+    height: auto;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    animation: zoomIn 1.5s ease-in-out;
+}
+
+.products img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 40px;
+    margin-top: 40px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideUp {
+    0% { transform: translateY(50px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes zoomIn {
+    0% { transform: scale(0.8); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
